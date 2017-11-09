@@ -57,7 +57,7 @@ public class RealmController {
     //clear all objects from Book.class
     public void clearAll() {
         realm.beginTransaction();
-        realm.clear(User.class);
+        realm.delete(User.class);
         realm.commitTransaction();
     }
 
@@ -75,7 +75,7 @@ public class RealmController {
     //check if Book.class is empty
     public boolean hasUsers() {
 
-        return !realm.allObjects(User.class).isEmpty();
+        return !realm.where(User.class).findAll().isEmpty();
     }
 
     //query example

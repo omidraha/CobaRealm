@@ -1,7 +1,6 @@
 package com.wisnu.myapplication.adapters;
 
 import android.support.v7.widget.RecyclerView;
-import android.view.ViewGroup;
 
 import io.realm.RealmBaseAdapter;
 import io.realm.RealmObject;
